@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.frosty.als_involve_v3.ConsentForm"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="165dp"
+            android:layout_height="36dp"
+            android:text="Informed Consent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="346dp"
+            android:layout_height="88dp"
+            android:text="Thank you for downloading the ALS Monitoring App. Before we begin we need to confirm your understanding and agreement to participate in this research study."
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="345dp"
+            android:layout_height="92dp"
+            android:text="Read each selection carefully, as afterward you will be presented with a choice between several statements. Select the statement that best fits what you read."
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="345dp"
+            android:layout_height="100dp"
+            android:text="You will need to select the correct statement from each selection in order to ensure your understanding of and consent to participation in the study. Once you have made your choice, click 'Next' at the bottom of each screen."
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="224dp" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:id="@+id/consent_radio_group"
+            >
+
+
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree"
+                android:padding="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I disgree"
+                android:padding="10dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="464dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

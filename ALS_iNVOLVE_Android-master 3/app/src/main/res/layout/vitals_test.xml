@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/vitals_height"
+                android:hint="inches"
+                android:inputType="number"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight:"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/vitals_weight"
+                android:hint="lbs"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Blood Presure "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/vitals_bp_upper"
+                android:hint="upper"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/vitals_bp_lower"
+                android:hint="low"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pulse: "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:hint="BPM"
+                android:gravity="center"
+                android:id="@+id/vitals_bpm"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Oyxgen %:"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:hint="%"
+                android:gravity="center"
+                android:id="@+id/vitals_oxygen"
+                android:inputType="number"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/vitals_update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="returnFromVitalsTest"
+            android:text="Update"
+            android:textStyle="bold"
+            android:theme="@style/SecondaryButton" />
+
+
+
+    </LinearLayout>
+</ScrollView>

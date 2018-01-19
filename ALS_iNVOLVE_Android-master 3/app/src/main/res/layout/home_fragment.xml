@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO make pretty-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            android:clickable="true"
+            android:onClick="startVitals">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_vitals"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Vitals of the Day"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:text="A recording of your body's intake and vitals of the day."/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirm_vitals"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:id="@+id/checkbox_vitals"
+                                android:layout_width="wrap_content"
+                                android:checked="true"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            android:clickable="true"
+            android:onClick="startSupplements">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_supplements"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Supplements of the Day"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:text="A recording of your body's supplements of the day."/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirm_supplements"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:id="@+id/checkbox_supplements"
+                                android:layout_width="wrap_content"
+                                android:checked="true"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            android:onClick="startFingerTapTest"
+            android:clickable="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_taptest"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Finger Tap Test"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="A test for dexterity within 1 minute"/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirm_finger"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:id="@+id/checkbox_finger"
+                                android:checked="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Results:"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hand:"
+                        android:textColor="@android:color/black"
+                        android:textSize="9dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/finger_tap_test_result_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="L-0 R-0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="right"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            android:onClick="startToeTapTest"
+            android:clickable="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_toetap"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Toe Tap Test"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="A test for dexterity within 1 minute"/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirm_toe"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:id="@+id/checkbox_toe"
+                                android:checked="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Results:"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foot:"
+                        android:textColor="@android:color/black"
+                        android:textSize="9dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/toe_tap_results_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="2dp"
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:onClick="startArmRotationTest"
+            android:clickable="true">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_mobility"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Arm Rotation Test"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="A test of your range of mobility"/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/confirm_arm"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Results:"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/arm_rotation_results_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="right"
+                            android:paddingTop="5dp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="°"
+                            android:textSize="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            android:clickable="false">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:paddingTop="0dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_mic"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="80dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="Voice Strength Test"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="A measure of your voice's projection strength"/>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Completed!"
+                                android:textStyle="bold|italic"
+                                />
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="0dp"/>
+                            <TextView
+                                android:id="@+id/list_item_activity_date_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:textSize="9dp"
+                                android:text="DATE:  Sep 28 Thu" android:layout_marginTop="10dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Results:"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

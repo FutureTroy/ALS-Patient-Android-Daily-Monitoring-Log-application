@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO make pretty-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:text="@string/login_screen_main_textView"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:text="@string/login_email_label_textView"
+        android:layout_weight=".5"
+        android:layout_marginStart="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/login_screen_user_editText"
+        android:inputType="textEmailAddress"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:text="@string/login_password_label_textView"
+        android:layout_weight=".5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/login_screen_password_editText"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:textSize="20sp"
+        android:text="@string/login_login_button_text"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/login_screen_login"
+        android:onClick="loginUser"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="Forgot Password"-->
+            <!--android:id="@+id/login_screen_forgot_password"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

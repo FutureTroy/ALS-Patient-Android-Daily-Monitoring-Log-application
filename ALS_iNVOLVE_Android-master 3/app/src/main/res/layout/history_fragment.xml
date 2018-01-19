@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?><!--TODO decide what this should look like-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/history_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fingerResultsCard"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:paddingTop="0dp"
+                        android:src="@drawable/ic_taptest" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="0dp"
+                            android:text="Finger Tap Test Results"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/fingerdatetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/fingerResultsBtn"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="share"
+                        android:onClick="shareFingerResults"
+                        />
+                </LinearLayout>
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/fingerGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Left Taps:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10s:"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/left10txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="l10"
+                        android:layout_marginRight="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="20s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/left20txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="l20"
+                        android:layout_marginRight="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="30s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/left30txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="l30"
+                        android:layout_marginRight="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="40s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/leftTotaltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ltotal"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Right Taps:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="10s:"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/right10txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r10"
+                        android:layout_marginRight="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="20s:"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/right20txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r20"
+                        android:layout_marginRight="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="30s:"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/right30txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="r30"
+                        android:layout_marginRight="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="40s:"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/rightTotaltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rtotal"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="3dp"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:paddingTop="0dp"
+                        android:src="@drawable/ic_toetap" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="0dp"
+                            android:text="Toe Tap Test Results"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/toedatetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/toeResultsBtn"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="36dp"
+                        android:text="share"
+                        android:onClick="shareToeResults"
+                        />
+
+                </LinearLayout>
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/toegraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_margin="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Toe Taps:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10s:"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/toe10txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="t10"
+                        android:layout_marginRight="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="20s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toe20txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="t20"
+                        android:layout_marginRight="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="30s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toe30txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="t30"
+                        android:layout_marginRight="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="40s:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toeTotaltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ttotal"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="3dp"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="5dp"
+                        android:paddingTop="0dp"
+                        android:src="@drawable/ic_mobility" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="0dp"
+                            android:text="Arm Rotation Results"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/armdatetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/armResultsBtn"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="36dp"
+                        android:text="share"
+                        android:onClick="shareArmResults"
+                        />
+                </LinearLayout>
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/armgraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Arm Performance:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Left:"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/armLtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aLeft"
+                        android:layout_marginRight="48dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="Right:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/armRtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aRight"
+                        android:layout_marginRight="18dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Leg Performance:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Left:"
+                        android:textStyle="bold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/legLtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lLeft"
+                        android:layout_marginRight="48dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="Right:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/legRtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lRight"
+                        android:layout_marginRight="18dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frosty.als_involve_v3.Profile"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:text="Profile"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textCapWords|textPersonName"
+        android:text="First Name"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textCapWords|textPersonName"
+        android:text="Last Name"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Age"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:text="Country of Birth"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <EditText
+        android:id="@+id/diagDate"
+        android:layout_width="132dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="When you were diagnosed"
+        android:inputType="date"
+        android:text="Diagnosis Date"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="When you started using this app"
+        android:inputType="date"
+        android:text="Start Date"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <EditText
+        android:id="@+id/sex"
+        android:layout_width="79dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="text|textCapWords"
+        android:text="Sex"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <EditText
+        android:id="@+id/race"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:text="Race"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="133dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="height (inches)"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+</android.support.constraint.ConstraintLayout>

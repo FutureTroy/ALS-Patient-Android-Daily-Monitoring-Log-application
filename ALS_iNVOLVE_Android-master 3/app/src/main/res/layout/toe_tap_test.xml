@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO make pretty-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/toe_tap_test_timer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tap_test_time_remaining"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_test_save_results"
+            android:textSize="20sp"
+            android:onClick="toeTapButtonHandler"
+            android:id="@+id/toe_tap_test_save_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toe_taps_label"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/toe_taps_number"
+                android:id="@+id/toe_tap_num_taps"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/toe_tap_test_button"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:text="@string/toe_tap_test_button_text"
+                android:theme="@style/SecondaryButton"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:onClick="toeTap"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

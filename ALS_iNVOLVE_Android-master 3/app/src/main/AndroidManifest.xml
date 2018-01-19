@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.frosty.als_involve_v3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_als"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_als"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".GyroscopeActivity"
+            android:label="Arm Rotation Test"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".FingerTapTest"
+            android:label="Finger Tap Test"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ToeTapTest"
+            android:label="Toe Tap Test"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".NewUser"
+            android:label="Registration"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Login"
+            android:label="Login"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".VitalsTest"
+            android:label="Vitals"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SupplementsTest"
+            android:label="Supplements"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ConsentForm"
+            android:label="Consent Form"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

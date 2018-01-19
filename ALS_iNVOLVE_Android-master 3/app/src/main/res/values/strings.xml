@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ALS iNVOLVE</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">History</string>
+    <string name="left_taps_text">Left Taps: </string>
+    <string name="left_taps_number">0</string>
+    <string name="right_taps_text">Right Taps: </string>
+    <string name="right_taps_number">0</string>
+    <string name="tap_test_time_remaining">00:00</string>
+    <string name="left_tap_button_text">Left Tap</string>
+    <string name="right_tap_button_text">Right Tap</string>
+    <string name="tap_test_save_results">Start Test</string>
+    <string name="profile_name_label_text_view">Name:</string>
+    <string name="profile_age_label_text_view">Age:</string>
+    <string name="profile_weight_label_text_view">Weight:</string>
+    <string name="profile_height_label_text_view">Height:</string>
+    <string name="profile_start_date_label_text_view">Start Date:</string>
+    <string name="edit_profile_button_text">Edit Profile</string>
+    <string name="results_label_home_fragment">Results</string>
+    <string name="tests_label_home_fragment">Tests</string>
+    <string name="login_register_button_text">Register</string>
+    <string name="login_login_button_text">Login</string>
+    <string name="login_password_label_textView">Password</string>
+    <string name="login_email_label_textView">Email</string>
+    <string name="login_screen_main_textView">ALS inVolve\n Login</string>
+    <string name="toe_tap_test_button_text">Tap</string>
+    <string name="toe_taps_label">Taps: </string>
+    <string name="toe_taps_number">0</string>
+    <string name="finger_tap_test_tip_start_button">Begin Testing</string>
+    <string name="resgister_new_user_button_text">Resgister</string>
+    <string name="register_user_diagnosis_date_hint">YYYY-MM-DD</string>
+
+
+</resources>

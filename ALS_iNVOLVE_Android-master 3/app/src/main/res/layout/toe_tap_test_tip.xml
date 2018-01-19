@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Placing your phone down on a low stable surface..."/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:src="@drawable/gfx_toetap_tip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="use your big toe to try and land as many taps as you can within the time limit."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:theme="@style/SecondaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/finger_tap_test_tip_start_button"
+            android:onClick="toeTapTipStart"/>
+
+    </LinearLayout>
+
+</LinearLayout>
