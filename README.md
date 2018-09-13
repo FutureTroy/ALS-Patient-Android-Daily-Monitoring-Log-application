@@ -2,6 +2,9 @@
 
 An Android application to help monitor ALS patients’ disease progression through a series of limb mobility and appendage dexterity assessments.
 
+![alt text](http://troybrown.me/img/screenshots/ss_als_uiMobile.png)
+[Read/See more...](https://troybrown.me/project_ALS.html/)
+
 ### Prerequisites
 
 *Android Studios required to run project.
